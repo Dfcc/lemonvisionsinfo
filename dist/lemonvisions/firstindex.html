@@ -1,0 +1,248 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <script>
+  <!--
+if (screen.width <= 699) {
+document.location = "lv_mobile.html";
+}
+//-->
+  <!--
+if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+   location.replace("http://url-to-send-them/iphone.html");
+}
+-->
+</script>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+       <title>landPage LemonVisions2016</title>
+       <link rel="stylesheet" href="css/style.css"/>
+<style type="text/css">
+#preload_area
+{
+    background-image: url('/img/slide1.png');
+    background-image: url('/img/slide1_invert.png');
+    background-image: url('/img/slide2.jpg');
+	background-image: url('/img/slide3.jpg');
+    background-image: url('/img/slide4.jpg');
+    background-image: url('/img/slide4_invert.jpg');
+	background-image: url('/img/slide5.jpg');
+	background-image: url('/img/slide6.jpg');
+    width: 0px;
+    height: 0px;
+    display: inline;
+}
+</style>  
+<script type='text/javascript' src='http://code.jquery.com/jquery-1.8.3.js'></script>
+<script src="http://code.jquery.com/color/jquery.color-2.1.0.js"></script> 
+<script type="text/javascript" src="js/parallax_script.js"></script>
+<script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function () {
+$(window).scroll(function(){
+        var window_top = $(window).scrollTop() + 0; 
+       // the "12" should equal the margin-top value for nav.stickydiv
+        var div_top = $('#checkdiv').offset().top;
+        if (window_top >= div_top) {
+                $('nav').addClass('stickydiv');
+            } else {
+                $('nav').removeClass('stickydiv');
+            }
+    });  
+
+  $(document).on("scroll", onScroll);
+
+$('a[href^="#"]').on('click', function (e) {
+      e.preventDefault();
+        $(document).off("scroll");
+         $('a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+         var target = this.hash,
+         menu = target;
+         $target = $(target);
+       $('html, body').stop().animate({
+            'scrollTop': $target.offset().top+2
+        }, 600, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+    });
+});
+
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('#nav a').each(function () {
+        var currLink = $(this);
+       var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('#nav ul li a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
+}
+
+</script>
+
+	<!----- fonts google --->   
+	<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates|Raleway" rel="stylesheet">
+
+</head> 
+
+<body>
+<div id="preload_area"></div>
+<span class="anchor" id="slide0"></span>
+
+<!----- container--->  
+<div class="container">
+<div id="floating"> </div>
+
+  
+<!----- HEADER START--->   
+<header id="header">
+<div class="content">
+<div id="logo"><a href="#slide0"> LemonVisions </a></div>
+
+<nav id="nav">
+	<ul>
+		<li><a href="#slide2" class="active" title="Next Section" >Productions</a></li>
+		<li><a href="#slide3" title="Next Section">Services</a></li>
+		<li><a href="#slide4" title="Next Section">App-webs </a></li>
+		<li><a  href="#slide5" title="Next Section">Img learn</a></li>
+		<li><a href="#slide6" title="Next Section">about</a></li>
+	</ul>
+</nav>
+</div>
+</header>	
+<!----- HEADER END--->   
+<section>
+<!----- SLIDES START --->   	
+	<div id="slide1"><img style="display: none;" src="img/slide1.png" alt="">
+	 <div id="slide1_invert"><img style="display: none;" src="img/slide1-invert.png" alt=""></div>
+	
+	 <div id="slide1_bis">
+		<div class="content-1slide">
+			
+			<div id="snowflakes1"></div>
+			<div id="snowflakes2"></div>
+            <h2>Come IN</h2>
+		    <h1>LemonVisions</h1>
+		    <div id="divider"> </div>
+		     <h3>On_Process </h3>
+           <div id="ribbon"></div>
+	       <div id="new_year"> </div>
+		</div>
+		</div> 
+    </div> 
+id="missionclick"  style="cursor:pointer;">More Information
+	<div id="slide2"><img style="display: none;" src="img/slide3.jpg" alt="">
+		<div class="content-2slide" >
+            <div class="quotes_container_left">
+		    <a href="swiper/demos/composer.html" class="pastilla" title="link_composer"style="cursor:pointer;" > <h3 class="letters  left1">.COMPOSER</h3></a>
+			  <a href="swiper/demos/portrait.html" class="pastilla" title="link_portrait"style="cursor:pointer;" ><h3 class="letters  left2">.PORTRAIT</h3> </a>
+			  <a href="swiper/demos/spaces.html" class="pastilla" title="link_spaces"style="cursor:pointer;" ><h3 class="letters  left3">.SPACES</h3> </a>
+			 
+			</div>
+			 <div class="quotes_container_right">
+		    <a href="swiper/demos/reportajes.html" class="pastilla" title="link_reportajes"style="cursor:pointer;" > <h3 class="letters  right1">.REPORTAJES</h3> </a> 
+			  <a href="swiper/demos/moda.html" class="pastilla" title="link_moda" style="cursor:pointer;"> <h3 class="letters  right2">.MODA</h3></a> 
+			  <a href="swiper/demos/reportajes.html" class="pastilla" title="link_reportajes"style="cursor:pointer;" >  <h3 class="letters  right3">.PRODUCTO</h3> </a>
+			  <h3 class="letters  right4">.LOCALIZACIONES EXTERIORES<br>Y INTERIORES</h3>
+			 
+			</div>
+		
+		
+		</div>
+	</div> 
+	
+	
+   <div id="slide3"><img style="display: none;" src="img/slide2.jpg" alt="">
+		<div class="content-3slide">
+			   <div class="quotes_container_big">
+			   <div class="quotes_container_big_left">
+		       <h3 class="quotes_pan">Img Services</h3>
+			   <h3 class="quotes_pan"> Edicion retoque </h3>
+			   <h3 class="quotes_pan">optimizacion </h3>
+			   </div>
+			   <div class="quotes_container_big_right">
+			   <h1 class="quotesh1_pan">albumes composiciones animaciones </h1>
+			   </div>
+			  
+		
+		</div>
+		</div> 
+    </div> 
+	
+	
+	<div id="slide4"><img style="display: none;" src="img/slide4.jpg" alt="">
+	<div id="slide4_invert"><img style="display: none;" src="img/slide4_invert.jpg" alt=""></div>
+	<div id="slide4_bis">
+		<div class="content-4slide">
+              <div class="quotes_container_big">
+		    <h3 class="quotes ">“Desarrollo de Web Apps Mobile Adaptables crossbrowsers</h3>
+			
+		 
+		</div>
+		</div> 
+    </div> 
+	 </div> 
+	
+	
+	<div id="slide5"><img style="display: none;" src="img/slide5.jpg" alt="">
+	<div id="slide5_bis">
+		<div class="content-5slide">
+           <div class="quotes_container_big">
+		      <h3 class="quotes white_text">“Img learn:  Didactica de fotografia digital, desde la camara hasta su difusión. </h3> <br>
+			 <h3 class="quotes white_text ">“Came on In” </h3>
+		  
+		
+		</div> 
+		</div> 
+ </div>
+ </div>
+ 	<div id="slide6"><img style="display: none;" src="img/slide6.jpg" alt="">
+	<div id="slide6_invert"><img style="display: none;" src="img/slide6-invert.jpg" alt=""></div>
+		<div class="content-6slide">
+           <div id="pastilla"></div>
+		   <div class="quotes_container">
+		   
+		      <h3 class="quotes">“Nous somme:Lemonvisions. </h3> <br>
+			 <h3 class="quotes">“Img investigator” </h3>
+			 
+		     <div class="quotes_img">
+		  <img src="img/logoLv.png" align="center"/> 
+		  </div> 
+		 </div> 
+		
+ </div>
+ </div> 
+</section>
+<footer id="footer">
+
+<div id="demo_back">
+<div id="copyright"><a href="http://www.1stwebdesigner.com/">Copyright lemonvisions.com </a></div>  
+<a href="#" class="lpanel"> << Go to the wall </a>
+<a href="#" class="rpanel"> portafolio >> </a>
+
+</div>
+</div>
+</footer>		
+	
+<!----- SLIDES END --->
+
+</body>
+
+</html>

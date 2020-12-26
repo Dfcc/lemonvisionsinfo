@@ -1,0 +1,306 @@
+@charset "utf-8";
+html{margin:0;padding:0;height:100%;width:100%;}
+body{margin:0;padding:0;color:#4A1E09;background: rgba(141, 124, 98, 0);font-family:Candara, Arial, sans-serif;}
+a{color:#4A1E09;}
+ul,ol{list-style:none;margin:0;padding:0;}
+p{margin:0 0 1em;}
+
+/* -------------------- contenedores(wrappers) -------------------- */
+
+
+
+/*$TABLET Small 480px */ 
+@media all and (min-width: 30em){
+
+} 
+/*$TABLET Portrait +598px*/ 
+@media all and (min-width: 37.500em){} 
+/*$DESKTOP +768px*/ 
+@media all and (min-width: 48em) {} 
+/*$BIGSCREEN +924px */ 
+@media all and (min-width: 57.750em) {}
+
+/* --------------------nav (menu-idiomas + menu-principal) -------------------- */
+#nav{margin:0 -1em;background: #FFFFFF url(../img/background_Nav.png) repeat center center;}
+#nav .activo{font-weight:bold;}
+
+
+/* menu-principal */
+#menu-principal{list-style:none;}
+#menu-principal li{list-style:none;margin:0;padding:0;color:#4a1e09;border-bottom:1px solid #8d7c62;font-family:"Segoe Print", Candara, Arial, sans-serif;}
+#menu-principal a{display:block;padding:.5em;color:#4a1e09;text-decoration:none;}
+#menu-principal a:hover,
+#menu-principal a:focus{font-weight:bold;}
+
+/*$TABLET Small 480px */ 
+@media all and (min-width: 30em){
+#menu-idiomas{float:right;margin:-20px 0 0 0;padding:0;}
+#menu-idiomas li{display:inline-block;margin:0 0 0 .6em;border:0 none;font-size:.7em;}
+#menu-idiomas a{display:inline-block;padding:0;}
+
+#menu-principal{display:block;margin:0;padding:13px 0 0;text-align:center;}
+#menu-principal li{display:inline-block;margin:0 .8em;border:0 none;font-size:.9em;}
+#menu-principal a{display:inline-block;padding:0;}
+/* menu-principal-cast */
+#menu-principal.cast li{margin:0 .65em;}
+/* menu-principal-uk */
+#menu-principal.uk li{margin:0 .55em;}
+/* menu-principal-fr */
+#menu-principal.fr li{margin:0 .35em;}
+} 
+/*$TABLET Portrait +598px*/ 
+@media all and (min-width: 37.500em){} 
+/*$DESKTOP +768px*/ 
+@media all and (min-width: 48em) {} 
+/*$BIGSCREEN +924px */ 
+@media all and (min-width: 57.750em) {}
+
+/* --------------------cabecera header () -------------------- */
+#header{margin:0;padding:0;}
+#header h1{margin:1em 0 1em;padding:0;text-align:center;}
+
+/* -------------------- contenido (titulo + foto + texto)  -------------------- */
+
+#mapa{margin-right:1em;padding:13px 24px 33px 26px;background:url(../img/fons-mapa.jpg) no-repeat 0 0;}
+#mapa iframe{border:1px solid #999;}
+#calendari{width:239px;height:332px;float:right;margin:50px 13px 0 0;padding:10px 0 0 10px;border:0;}
+#texto .text-mapa{margin:-33px 39px;color:#4a1e09;font:1em Candara, Arial;text-align:right;}
+#texto{margin:0;}
+#texto p{color:#4a1e09;font:normal 1em/1.4em Candara, Arial;margin:0 0 1em;}
+#texto iframe{max-width:100%;}
+/*$TABLET Small 480px */
+@media all and (min-width: 30em){
+#contenido{min-height:15em;padding:0 1.5em;}
+#contenido h2{font-size:1em}
+#espai-objecte{max-width:25em;}
+#espai-objecte object{display:block;width:348px;min-height:0;height:337px;}
+}
+/*$TABLET Portrait +598px*/
+@media all and (min-width: 37.500em){
+#espai-objecte{float:right;margin:0 0 1em 1em;}
+}
+/*$TABLET Portrait +700px*/
+@media all and (min-width: 43.750em){
+#espai-objecte{float:right;margin:-120px -1.5em 0 1em;}
+#texto p{font-size:.8em;}
+#texto .text-mapa{font-size:.7em;}
+}
+/*$DESKTOP +768px*/ 
+@media all and (min-width: 48em) {
+}
+
+/*----gps----*/
+#gps{float:center;margin-top:1.5em;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:0.8em;}
+
+/*----red social----*/
+#red-social{width:250px;float:center;margin-top:2.8em;margin-left:-0.5em;margin-bottom:-5em;}
+#red-social p{font-size:0.8em;}
+#michelin{float:right;margin:-1em 0 0.5em 0}
+#contenido img {border:none;}
+#alerta{float:left;margin-top:1.5em;margin-bottom:1em;}
+#alerta .destacat{color:#000;}
+#alerta em{color:#09C;font-size:1.4em;font-weight:bold;color:#F00;}
+	
+/* Lista de instalaciones */
+#installacions{margin:0 0 1em;padding:0 0 1em;}
+#installacions h3{margin:3em 0 0;color:#4a1e09;font:bold italic 1.25em/1.4em Candara, Arial;}
+#installacions ul{list-style:none;margin:0;padding:0;}
+#installacions li{padding:0;color:#4a1e09;font:normal 1em/1.4em Candara, Arial;}
+/*$TABLET Portrait +700px*/
+@media all and (min-width: 43.750em){
+#installacions{position:relative;z-index:5;width:163px;float:left;min-height:12.9em;margin:-1.7em 2em 1.3em;padding:.9em 0 0 1em;background:url(../img/fons-installacions.jpg) no-repeat 0 0;}
+#installacions h3{margin:3em 0 0 1em;font-size:.7em;}
+#installacions ul{margin:0 0 0 .8em;}
+#installacions li{margin-bottom:-2.2px;padding:0;color:#4a1e09;font:normal .7em/1.4em Candara, Arial;}
+}
+#address2{margin:0 40px 50px 10px;color:#4a1e09;font:1em Candara, Arial;text-align:center;}
+#address2 a{text-decoration:none;color:#4a1e09;}
+#texto h4{margin-bottom:0;color:#4a1e09;font:bold 1.2em Candara, Arial;}
+#texto h5{margin-bottom:0;color:#4a1e09;font-weight:bold;}
+#missatge-formulari{margin-top:6em;margin-bottom:0;color:#4a1e09;text-align:center;}
+form h3{margin-bottom:0;color:#4a1e09;font:normal .8em Candara, Arial;}
+
+.estil-textarea{width:300px;height:90px;color:#4a1e09;font:normal .8em Candara, Arial;}
+.estil-form{width:300px;height:20px;color:#4a1e09;font:normal .8em Candara, Arial;}
+.estil-textarea-opi{width:578px;height:40px;color:#4a1e09;font:normal .8em Candara, Arial;}
+.estil-form-opi{width:190px;color:#4a1e09;font:normal .8em Candara, Arial;}
+.links-form{font:normal .8em Candara, Arial;}
+.links-condicions-reserva-form{font:normal .7em Candara, Arial;}
+#text-condicions{float:right;margin:0;font:normal .85em Candara, Arial;}
+
+#form-nom{float:left;margin:0;}
+#form-correu{float:left;margin:0;}
+#form-questio{float:left;clear:bloth;margin:0 0 .5em;}
+#form-enviar{float:left;width:50%;margin-bottom:10px;font:normal .8em Candara, Arial;}
+#form-opinions{text-align:center;}
+.boto{width:60px;height:19px;color:#f8f3b9;background:#8d7c62;font:bold .9em Candara, Arial;}
+#logos{margin:0;}
+
+/*---------------------------fotos----------------------------*/
+#menu-fotos{list-style:none;margin:1em 0 2em;font:normal 1em Candara,Arial;} 
+#menu-fotos li{margin:0;font:normal 1em Candara, Arial;}
+#menu-fotos a{color:#4a1e09;margin-bottom:0;text-decoration:none;}
+#menu-fotos .activo{font-weight:bold;}
+#menu-fotos a:hover,
+#menu-fotos a:focus{font-weight:bold;}
+#fotos-miniatures{text-align:center;}
+#fotos-miniatures li{display:inline-block;margin:0 .15em;}
+#fotos-miniatures li:hover,
+#fotos-miniatures li:focus{outline:2px solid #8d7c62;cursor:pointer;}
+
+#fotos-miniatures li img{display:block;margin:0;}
+
+#foto-habitacio-popi,#foto-entrada1,#foto-piscina,#foto-esmorzar,#foto-evento1{margin:0;}
+#foto-habitacio-azul,#foto-habitacio-silvia,#foto-habitacio-lolita,
+#foto-habitacio-lolita-bany,#foto-habitacio-abuela,#foto-habitacio-amarilla,
+#foto-entrada2,#foto-menjador,#foto-biblio,#foto-salo,#foto-tv,
+#foto-abu-terrassa,#foto-jardi2,#foto-jardi1,#foto-terrassa,#foto-terrassa2,
+#foto-coques,#foto-judias-salteadas,#foto-tomate,#foto-evento3,#foto-evento2,
+#foto-evento5,#foto-evento6,#foto-buffet{position:absolute;right:0;top:0;}
+/*$TABLET Portrait +700px*/
+@media all and (min-width: 43.750em){
+#menu-fotos{list-style:none;margin:14px 380px 71px 0;font-size:1.1em;}
+#menu-fotos li{margin:-3px;text-align:right;font:normal 1em Candara, Arial;}
+}
+
+/*--------------------------activitats--------------------------*/
+#actividades{margin:1em 0;}
+ul.lista-actividades{overflow:hidden;margin:0;padding:0;list-style:none;}
+ul.lista-actividades li{margin:0 0 .5em;padding:0;color:#4a1e09;font:normal 1em/1.4em candara, arial;}
+/*$TABLET Portrait +700px*/
+@media all and (min-width: 43.750em){
+#actividades{margin:10px -25px 0px 30px;}
+ul.lista-actividades{overflow:hidden;margin:0;padding:0;list-style:none;}
+ul.lista-actividades li{float:left;width:32%;margin:0;padding:2px;font-size:.8em;}
+}
+
+/* -------------------- Tablas en general -------------------- */
+table{margin:2em 0;border-collapse:collapse;font-size:.8em;}
+table caption{margin:0 0 1em;padding:4px;font:normal .9em Candara, Arial;text-align:left;}
+table th{padding:4px;border:1px solid #8D7C62;}
+table tbody tr:hover,
+table tbody tr:focus{background:#f1ebb9;}
+
+/* -------------------- Tabla general de precios -------------------- */
+#precios{width:100%;margin:0;}
+#precios caption{text-align:center;margin-bottom:20px;margin-top:-10px;font:1.2em Candara, Arial;}
+#precios td{font-size:1.2em;padding:4px;border:1px solid #8D7C62;text-align:center;}
+#precios td em{display:block;}
+#precios thead em{font-weight:normal}
+#precios thead th{	border:0 none;vertical-align:bottom;}
+#precios thead th:first-child{text-align:left;}
+#precios tbody th{background:#dfdab0;border:1px solid #8D7C62;vertical-align:middle;text-align:left;}
+#precios tbody th em{display:block;color:#666633;}
+/*$TABLET Portrait +700px*/
+@media all and (min-width: 43.750em){
+#precios{width:95%;margin:4em 3em 0 -.5em;}
+#precios td em{display:block;font-size:.7em;}
+#precios thead em{font-size:.7em;	font-weight:normal}
+#precios tbody th em{font-size:.9em;}
+}
+#cenas{width:90%;margin:1em auto;}
+#texto p.texto-reserva-cenas{width:90%;margin:-0.3em auto;font-size:.8em;line-height:1.1em;}
+#cenas caption{margin:0;font:bold 1em Candara, Arial;}
+#cenas th{background:#dfdab0;text-align:left;}
+#cenas td em{font-style:normal;}
+#cenas td{padding:4px;border:1px solid #8D7C62;text-align:center;}
+
+/* -------------------- Tabla general de REGALE -------------------- */
+table.tabla-regale tbody td{padding:8px;}
+table.tabla-regale td em{display:block;font:1.4em Candara, Arial;color:#666633;font-weight:bold;}
+table.tabla-regale tbody td{background:#dfdab0;border:1px solid #8D7C62;vertical-align:middle;text-align:center;font:.9em Candara, Arial;font-weight:bold;}
+table.tabla-regale td a{display:block;margin-top:.4em;margin-bottom:-.5em;text-align:center;font-weight:bold;font-size:.9em;line-height:1em;color:#666633;text-decoration:none;}
+table.tabla-regale td a:hover{text-decoration:underline;}
+table.tabla-regale caption{margin-bottom:.7em;margin-left:2.1em;margin-top:-3.2em;font:1.2em Candara, Arial;}
+table.tabla-regale tbody td:hover{background:#f1ebb9;}
+table.tabla-regale tbody tr:hover{background:transparent;}
+#texto-tabla-regale{font:.8em Candara, Arial;margin-top:-.5em;text-align:center;}
+#texto-tabla-regale	p.regale{font-size:1em;font-weight:bold;margin-top:-1em;}
+#texto-tabla-regale	p.link-menu{margin-top:-.6em;text-align:center;font-size:1em;}
+.link-menu a{color:#666633;text-decoration:underline;font-weight:bold;}
+.link-menu a:hover,
+.link-menu a:focus{text-decoration:none;}
+
+#regalito {margin-top:2.5em;position:relative;}
+
+/* -------------------- Tabla de fin de semana -------------------- */
+#findesemana{width:100%;}
+#texto p.impuesto-turistico{font:italic 1em Candara, Arial;}
+#findesemana caption{font-size:1.1em;}
+#findesemana td{font-size:1.3em;padding:4px;border:1px solid #8D7C62;text-align:center;}
+#findesemana thead th{padding:0 0 4px;border:0 none;font-weight:normal;}
+#findesemana tbody th{padding:4px;background:#dfdab0;text-align:left;}
+/*$TABLET Portrait +700px*/
+@media all and (min-width: 43.750em){
+#findesemana{width:auto;margin-top:30px;margin-bottom:1em;min-width:200px;}
+#texto p.impuesto-turistico{font-size:.8em;}
+#findesemana caption{font-size:1.1em;margin-bottom:30px;}
+#findesemana td{font-size:1.3em;padding:4px;border:1px solid #8D7C62;text-align:center;}
+#findesemana thead th{padding:0 0 4px;border:0 none;font-weight:normal;}
+#findesemana tbody th{padding:4px;background:#dfdab0;text-align:left;width:60%;}
+}
+/* -------------------- Menu -------------------- */
+#menu{max-width:45em;margin:0 0 35px 0;padding:0;text-align:center;vertical-align:middle;}
+#menu h1{margin:20px 0 30px 0;font-family:"Segoe Print", Candara, Arial, sans-serif;font-size:1.5em;}
+#menu h2{margin:20px 0 15px 0;font-style:normal;font-weight:bold;}
+#menu p{font-family:"Segoe Print", Candara, Arial, sans-serif;line-height:.4em;}
+#menu p.pan{margin-top:3em;}
+
+/* -------------------- Comentarios -------------------- */
+#contenido .comment{margin:1.2em 0;}
+#texto-comment{margin:3em;font:normal .8em/1.4em Candara, Arial;}
+#contenido .comment .auth{float:left;margin:0;color:#8C982C;font-size:1em;font-weight:bold;}
+#contenido .comment .date{margin:0;float:right;color:#8C982C;}
+#contenido .comment .comm-text{clear:both;}
+
+/* -------------------- address -------------------- */
+#pie{max-width:41em;margin:2px auto;padding:0 2em;text-align:center;}
+#pie address{padding:.5em 0;font:normal bold 1em/1.4 Candara;color:#eceece;}
+#pie address a{color:#eceece;text-decoration:none;font-weight:bold;}
+/*$TABLET Small 480px */
+@media all and (min-width: 30em){
+}
+/*$TABLET Portrait +598px*/
+@media all and (min-width: 37.500em){
+#pie address{padding:0;font-size:.7em;}
+}
+@media all and (min-width: 43.750em){
+}
+
+/* ---------------------PORTADA--------------------- */
+#portada{max-width:45em;height:100%;margin:0 auto;background:#F5F5D3 url(../img/fondo-contenedor-textura.jpg) repeat center center;}
+#contenido-portada{margin:0;padding:0;}
+#-portada{margin:0;padding:0;}
+#logo-portada h1{margin:0;padding:2em 0 1em;text-align:center;}
+#navegacion_portada{margin:2em 0 5em;text-align:center;}
+#navegacion_portada .menu_portada li{padding-top:0;margin-top:0;list-style-type:none;}
+#navegacion_portada .menu_portada a{display:block;padding:.75em 0;color:#4a1e09;font-family:"Segoe Print", Candara, Arial, sans-serif;text-decoration:none;line-height:1.3em;font-size:17px;}
+#navegacion_portada .menu_portada a:hover:before,
+#navegacion_portada .menu_portada a:focus:before{content:"> "}
+#navegacion_portada .menu_portada a:hover:after,
+#navegacion_portada .menu_portada a:focus:after{content:" <"}
+#navegacion_portada .menu_portada a:hover,
+#navegacion_portada .menu_portada a:focus,
+#navegacion_portada .menu_portada a:active{font-weight:bold;background-color:rgba(255,255,255,.45);}
+/*$TABLET Small 480px */ 
+@media all and (min-width: 30em){} 
+/*$TABLET Portrait +598px*/ 
+@media all and (min-width: 37.500em){} 
+/*$DESKTOP +700px*/ 
+@media all and (min-width: 43.750em) {
+#portada{max-width:45em;height:530px;margin:16px auto 0;background:none;background-image:url(../img/fons-portada.jpg);background-repeat:no-repeat;}
+#contenido-portada{float:right;margin:170px 65px 0 0;padding:0;}
+#logo-portada h1{margin:0;padding:0;text-align:left;}
+#navegacion_portada{float:left;margin:22px 0 0 17px;text-align:left;}
+#navegacion_portada .menu_portada li{padding-top:0;margin-top:0;list-style-type:none;}
+#navegacion_portada .menu_portada a{padding:0;color:#4a1e09;font-family:"Segoe Print", Candara, Arial, sans-serif;text-decoration:none;line-height:1.3em;font-size:17px;}
+#navegacion_portada .menu_portada a:hover:before,
+#navegacion_portada .menu_portada a:focus:before,
+#navegacion_portada .menu_portada a:hover:after,
+#navegacion_portada .menu_portada a:focus:after{content:""}
+#navegacion_portada .menu_portada a:hover,
+#navegacion_portada .menu_portada a:focus,
+#navegacion_portada .menu_portada a:active{font-weight:bold;background-color:rgba(255,255,255,0);}
+} 
+/*$BIGSCREEN +924px */ 
+@media all and (min-width: 57.750em) {}
