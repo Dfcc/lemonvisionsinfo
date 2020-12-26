@@ -1,27 +1,7 @@
 $(document).mousemove(function(e){
     $(".follow").css({left:e.pageX, top:e.pageY});
 });
-jQuery(function ($) {
-    if (typeof $('.menu-btn').offset() !== 'undefined') {
-        var altura = $('.menu-btn').offset().top;
-        if ($(document).scrollTop() > altura) {
-            $('.menu-btn').addClass('menu-btn-fixed');
-        }
- 
-        // Fijar el menú de navegación al hacer scroll
-        $(document).on('scroll', function () {
- 
-            if ($(document).scrollTop() > altura) {
-                $('.menu-btn').addClass('menu-btn-fixed');
- 
-            } else {
-                $('.menu-btn').removeClass('menu-btn-fixed');
-            }
- 
-        });
-    };
- 
-});
+
 
 
 var name = "#floating";
